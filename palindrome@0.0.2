@@ -17,10 +17,10 @@ int main()
 	dlina = stroka1.size();
 
 	for (int i = 0; i < (dlina / 2); i++) {
-	      if (((stroka1[i] >= 65) && (stroka1[i] <= 90 )) && (stroka1[i] == stroka1[a - 1 - i]     )) b += 1;
-	 else if (((stroka1[i] >= 65) && (stroka1[i] <= 90 )) && (stroka1[i] == stroka1[a - 1 - i] - 32)) b += 1;
-	 else if (((stroka1[i] >= 97) && (stroka1[i] <= 122)) && (stroka1[i] == stroka1[a - 1 - i]     )) b += 1;
-	 else if (((stroka1[i] >= 97) && (stroka1[i] <= 122)) && (stroka1[i] == stroka1[a - 1 - i] + 32)) b += 1;
+	      if (((stroka1[i] >= 65) && (stroka1[i] <= 90 )) && (stroka1[i] == stroka1[dlina - 1 - i]     )) b += 1;
+	 else if (((stroka1[i] >= 65) && (stroka1[i] <= 90 )) && (stroka1[i] == stroka1[dlina - 1 - i] - 32)) b += 1;
+	 else if (((stroka1[i] >= 97) && (stroka1[i] <= 122)) && (stroka1[i] == stroka1[dlina - 1 - i]     )) b += 1;
+	 else if (((stroka1[i] >= 97) && (stroka1[i] <= 122)) && (stroka1[i] == stroka1[dlina - 1 - i] + 32)) b += 1;
 	}
 	
 	if (b == (dlina / 2)) cout << "1" << endl;
